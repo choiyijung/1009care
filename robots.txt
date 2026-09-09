@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://1004therapy.netlify.app/sitemap.xml
+Sitemap: https://1009care.netlify.app/sitemap.xml
