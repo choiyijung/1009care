@@ -62,31 +62,30 @@ a {
 /* 메인 배너 */
 
 .hero {
-  min-height: 620px;
-  padding: 100px 20px;
+  min-height: 650px;
+  padding: 80px 20px;
   display: flex;
   align-items: center;
   background:
-    radial-gradient(
-      circle at 80% 25%,
-      rgba(255, 190, 229, 0.75),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 15% 80%,
-      rgba(190, 175, 255, 0.75),
-      transparent 35%
-    ),
     linear-gradient(
-      135deg,
-      #fff8ff,
-      #eee8ff
-    );
+      90deg,
+      rgba(255,255,255,0.98) 0%,
+      rgba(255,248,253,0.96) 47%,
+      rgba(255,255,255,0.15) 72%
+    ),
+    url("/assets/images/region-shop/327.png") right center / 58% auto no-repeat,
+    #fff8fb;
 }
 
 .hero-content {
   width: min(1100px, 100%);
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content > * {
+  max-width: 540px;
 }
 
 .hero-label,
@@ -251,10 +250,22 @@ a {
   .menu a {
     font-size: 13px;
   }
-
   .hero {
-    min-height: 560px;
-    padding: 70px 20px;
+    min-height: auto;
+    padding: 70px 20px 320px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,0.98) 0%,
+        rgba(255,248,253,0.96) 52%,
+        rgba(255,255,255,0.10) 70%
+      ),
+      url("/assets/images/region-shop/327.png") center bottom / 100% auto no-repeat,
+      #fff8fb;
+  }
+
+  .hero-content > * {
+    max-width: 100%;
   }
 
   .hero h1 {
