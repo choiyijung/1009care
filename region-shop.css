@@ -1,17 +1,173 @@
-.region-shop-card{max-width:1120px;margin:34px auto;padding:0 20px}
-.region-shop-card-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:30px;align-items:center;padding:28px;border:1px solid rgba(0,0,0,.08);border-radius:24px;background:#fff;box-shadow:0 12px 34px rgba(0,0,0,.08)}
-.region-shop-card-image img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px}
-.region-shop-card-copy h1,.region-shop-card-copy h2{margin:0 0 16px;font-size:clamp(27px,4vw,42px);line-height:1.25;word-break:keep-all}
-.region-shop-card-copy p{margin:0 0 22px;font-size:17px;line-height:1.8;word-break:keep-all}
-.region-shop-card-cta{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 25px;border-radius:999px;background:#111;color:#fff;text-decoration:none;font-weight:800}
-.region-shop-contact{max-width:1120px;margin:44px auto;padding:0 20px}
-.region-shop-contact-inner{text-align:center;padding:52px 24px;border-radius:28px;background:linear-gradient(115deg,#7339df 0%,#a846c7 55%,#bb4db4 100%);color:#fff}
-.region-shop-contact-inner p{margin:0 0 16px;font-size:16px;font-weight:700;line-height:1.5}
-.region-shop-contact-inner h2{margin:0 0 28px;font-size:clamp(27px,4vw,42px);line-height:1.25;font-weight:800;word-break:keep-all}
-.region-shop-contact-cta{display:inline-flex;align-items:center;justify-content:center;min-width:122px;min-height:56px;padding:0 28px;border-radius:999px;background:#fff;color:#7138d7;text-decoration:none;font-weight:800;font-size:16px}
+.region-shop-card{
+  max-width:1180px;
+  margin:38px auto;
+  padding:0 20px;
+}
+
+.region-shop-card-inner{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:42px;
+  align-items:center;
+  min-height:520px;
+  padding:48px;
+  border:1px solid rgba(113,56,208,.10);
+  border-radius:30px;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(255,205,231,.65),transparent 32%),
+    linear-gradient(135deg,#fffaff 0%,#f6f0ff 100%);
+  box-shadow:0 18px 48px rgba(75,45,110,.10);
+  overflow:hidden;
+}
+
+.region-shop-card-copy{
+  grid-column:1;
+  grid-row:1;
+}
+
+.region-shop-card-image{
+  grid-column:2;
+  grid-row:1;
+}
+
+.region-shop-card-image img{
+  display:block;
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:26px;
+  box-shadow:0 16px 38px rgba(0,0,0,.12);
+}
+
+.region-shop-card-copy h1,
+.region-shop-card-copy h2{
+  margin:0 0 20px;
+  font-size:clamp(34px,4vw,50px);
+  line-height:1.22;
+  letter-spacing:-1.5px;
+  word-break:keep-all;
+}
+
+.region-shop-card-copy p{
+  margin:0 0 28px;
+  max-width:540px;
+  color:#5d5863;
+  font-size:18px;
+  line-height:1.85;
+  word-break:keep-all;
+}
+
+.region-shop-card-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:56px;
+  padding:0 28px;
+  border-radius:999px;
+  background:#7138d0;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  box-shadow:0 10px 24px rgba(113,56,208,.22);
+}
+
+.region-shop-contact{
+  max-width:1120px;
+  margin:52px auto;
+  padding:0 20px;
+}
+
+.region-shop-contact-inner{
+  text-align:center;
+  padding:56px 24px;
+  border-radius:30px;
+  background:linear-gradient(120deg,#f7efff 0%,#fff3fa 100%);
+  border:1px solid rgba(113,56,208,.12);
+  color:#25212a;
+}
+
+.region-shop-contact-inner p{
+  margin:0 0 15px;
+  color:#7138d0;
+  font-size:16px;
+  font-weight:800;
+  line-height:1.5;
+}
+
+.region-shop-contact-inner h2{
+  margin:0 0 28px;
+  font-size:clamp(28px,4vw,42px);
+  line-height:1.25;
+  font-weight:800;
+  word-break:keep-all;
+}
+
+.region-shop-contact-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:122px;
+  min-height:56px;
+  padding:0 28px;
+  border-radius:999px;
+  background:#7138d0;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  font-size:16px;
+}
+
 @media(max-width:760px){
-  .region-shop-card-inner{grid-template-columns:1fr;padding:18px}
-  .region-shop-card{padding:0 14px;margin:20px auto}
-  .region-shop-contact{padding:0 14px}
-  .region-shop-contact-inner{padding:40px 18px}
+  .region-shop-card{
+    padding:0 14px;
+    margin:20px auto;
+  }
+
+  .region-shop-card-inner{
+    grid-template-columns:1fr;
+    gap:28px;
+    min-height:auto;
+    padding:24px 18px;
+  }
+
+  .region-shop-card-copy{
+    grid-column:1;
+    grid-row:1;
+  }
+
+  .region-shop-card-image{
+    grid-column:1;
+    grid-row:2;
+  }
+
+  .region-shop-card-image img{
+    height:auto;
+    aspect-ratio:4/3;
+  }
+
+  .region-shop-card-copy h1,
+  .region-shop-card-copy h2{
+    font-size:34px;
+    letter-spacing:-1px;
+  }
+
+  .region-shop-card-copy p{
+    font-size:16px;
+  }
+
+  .region-shop-card-cta{
+    width:100%;
+  }
+
+  .region-shop-contact{
+    padding:0 14px;
+  }
+
+  .region-shop-contact-inner{
+    padding:40px 18px;
+  }
+
+  .region-shop-contact-cta{
+    width:100%;
+  }
 }
